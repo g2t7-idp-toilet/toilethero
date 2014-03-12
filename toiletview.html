@@ -19,6 +19,7 @@
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/toiletview.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -26,15 +27,19 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
+    
+        
+    <!-- NAVBAR BEGIN -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-            <a class="navbar-brand" href="#">Project name</a>
+          </button>        
+            <!--<a class="navbar-brand pull-right" href="#">ToiletHero</a>-->
+            <img src="img/ToiletHeroLogo.png" class="pull-right">
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -66,42 +71,92 @@
         </div><!--/.navbar-collapse -->
       </div>
     </div>
+    <!-- NAVBAR BEGIN -->
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
+    <!-- Level and School information -->
     <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="col-lg-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
+        
+        <div class="row">
+            <div class="col-xs-12" style="padding-top:12px">
+                <div class="level-indicator pull-left">
+                    <div class="level-word">Level</div>
+                    <div class="level-number">3</div>         
+                </div>
 
+                <div class="school-indicator">
+                    <div class="school-word">School of Information Systems</div>
+                </div>               
+            </div>
+        </div>
+    </div>    
+    
+        <br>
+       
+        <!-- Main Toilet Picture -->
+        <div class="container">
+            <img class="img-responsive" src="img/entrance1.jpg">
+            
+        </div>
+        
+        <br>
+        
+        <!-- Statistics indicators -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="stat-box">
+                        <div class="stat-word">
+                            Distance
+                        </div>
+                        <div class="stat-value">
+                            157m
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="stat-box">
+                        <div class="stat-word">
+                            Cleanliness
+                        </div>
+                        <div class="stat-value">
+                            Filthy
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="stat-box">
+                        <div class="stat-word">
+                            Crowd
+                        </div>
+                        <div class="stat-value">
+                            Several
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Rate Button -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <button type="button" class="btn btn-danger btn-lg btn-block"><span class="glyphicon glyphicon-heart-empty"></span> Rate & Comment</button>
+                </div>
+
+                <!--
+                <div class="col-xs-6">
+                    <button type="button" class="btn btn-info btn-lg btn-block">View Comment</button>
+                </div>
+                -->
+            </div>
+            
+        </div>
+        
       <hr>
 
       <footer>
         <p>&copy; Company 2013</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      </footer> 
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>

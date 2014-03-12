@@ -1,0 +1,95 @@
+/* 
+    Document   : toiletview
+    Created on : Mar 11, 2014, 8:40:11 PM
+    Author     : Zachery
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+root { 
+    display: block;
+}
+
+
+.navbar-header img
+{
+    width : 45px;
+    height: 45px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+
+.level-indicator {
+    width:53px;
+    height:49px;
+    padding:4px;
+    border:3px solid black;
+    
+}
+
+.level-indicator .level-word {
+    font-size: 14px;
+    text-align: center;
+    margin-top: -3px;
+}
+
+.level-indicator .level-number {
+    font-size: 24px;
+    text-align: center;
+    margin-top: -7px;
+}
+
+.school-indicator {
+    margin-left:65px;
+    
+    width:225px;
+    height:49px;
+    padding: 1px 4px;
+    border:3px solid black;
+    
+    font-size: 14px;
+    text-align: left;
+    
+}
+
+/*
+    unused. refers to the location tag to be sitting on top of the picture. e.g. "Outside Seminar Room 3-1"
+*/
+.location {
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+    
+    width: 290px;
+    height: 27px;
+    padding: 0px 4px;
+    
+    border: 3px solid black;
+}
+
+
+.stat-box {
+    width:84px;
+    height:54px;
+    padding:4px;
+    border:3px solid black;
+    
+    margin-bottom: 8px;
+}
+
+.stat-word {
+    font-size: 11px;
+    text-align: center;
+    margin-top: -3px;
+    margin-bottom: 6px;
+}
+
+.stat-value {
+    font-size: 20px;
+    text-align: center;
+    margin-top: -7px;
+}
+
+
