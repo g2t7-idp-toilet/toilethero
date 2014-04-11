@@ -58,6 +58,12 @@ html, body {
 	text-align: center;
 }
 
+#gps{
+	position:absolute;
+	left: 80%;
+	bottom: 20%;
+}
+
 #logo img {
 	margin-left: -40px;
 }
@@ -68,6 +74,12 @@ html, body {
 }
 
 .navbar .sb-toggle-left {
+	width: 58px;
+	float: left;
+	padding: 14px;
+}
+
+.navbar #btn-back {
 	width: 58px;
 	float: left;
 	padding: 14px;
@@ -401,10 +413,32 @@ ul#comments li.comment span small {
 	display: block;
 }
 
+
 #mapscreen {
-	background-image: url('../images/animated.gif');
-	background-position: center; 
+	/*background-image: url('../images/animated.gif');*/
+	background-position: center;
 	height: 33em;
+}
+
+#mapscreen #map {
+	postion:relative;
+	margin-top: -20px;
+}
+
+#mapscreen .level-toggle a {
+	position: absolute;
+	left: 85%;
+	bottom: 5%;
+	border: 0;
+	
+	bottom: 55px;
+}
+
+/* not used */
+#map-canvas {
+	height: 33em;
+	position: center;
+	z-index: 20;
 }
 
 .mapinfo {
@@ -415,11 +449,76 @@ ul#comments li.comment span small {
 	background:rgba(255,255,255,0.5);	
 }
 
-#mapscreen div#viewdirections {
+/*
+	ZACH's DIRECTION TOGGLE AND LIST STYLES
+	
+*/
+
+#mapscreen #viewdirections-bar {
+	position:absolute;
+	/*
 	margin-top: 21.5em;
 	padding-left: 20px;
 	padding-right: 20px;
+	*/
+	width:320px;
+	height:80px;
+	
+	left: 0px;
+	top: 420px;
+	
+	
+	background:rgb(255,255,255);
+	box-shadow:0px 1px 5px;
 }
+
+#mapscreen #viewdirections-bar a {	
+	
+	display: block;
+	height: 100%;
+	width:100%;
+	
+}
+
+#mapscreen #viewdirections-bar a:link, a:visited, a:hover, a:active {	
+	color: black;
+	text-decoration: none;
+}
+
+#mapscreen #viewdirections-bar p {
+	font-size: 1.5em;
+	text-color: black;
+	
+	position: relative; /*relative to viewdirections-bar*/
+	right: -40px;
+	top: 20px;
+	
+	
+}
+
+#mapscreen #viewdirections-bar img {
+	position:relative; /*relative to viewdirections-bar*/
+	right: -265px;
+	top: -20px;
+}
+
+#mapscreen #directionlist {
+	width:320px;	/*320*/
+	height:438px;	/*528 - 80px(viewdirections-bar) -20px(navbar)*/
+	
+	display:none;
+	
+	background:rgb(255,255,255);
+	
+	position:absolute;
+	top: -470px; /*550-80*/
+	left:-15px;
+}
+
+/*
+	END:	ZACH's DIRECTION TOGGLE AND LIST STYLES
+
+*/
 
 #directionscreen div#viewindoor {
 	padding-left: 20px;
@@ -481,10 +580,30 @@ ul#comments li.comment span small {
   margin-bottom: 10px;
 }
 
-.carousel-caption {
-	bottom: auto;
+.carousel-caption p {
+	z-index: 10;
+	
+	position: absolute;
+	top: -165px;
+	left: -44px;
+	/*
+	bottom: 234px;
+	right: -13px;
+	*/
+	
+	padding: 8px;
+	color: black;
+	text-align: left;
+	width: 260px;
+	
+	text-shadow: 0px 0px;
+	font-color: black;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.carousel-caption button {
 	top: 120px;
-	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 .carousel-inner div.item img {
@@ -495,6 +614,18 @@ ul#comments li.comment span small {
 .carousel-control {
 	padding-top: 1em;
 	font-size: 4em;
+}
+
+.left p {
+	position: absolute;
+	top: 90px;
+	left: 10px;
+}
+
+.right p {
+	position: absolute;
+	top: 90px;
+	right: 10px;
 }
 
 .modal {

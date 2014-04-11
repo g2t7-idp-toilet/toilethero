@@ -2,7 +2,11 @@
 
 // Dirty little script hacked together by kelvin for filtering lololol!
 
-$con = mysqli_connect("localhost", "root", "gizmos", "toilethero");
+//Kelvin's DB
+//$con = mysqli_connect("localhost", "root", "gizmos", "toilethero");
+
+//ZACH's DB
+$con = mysqli_connect("localhost", "root", "root", "toilethero");
 
 if (mysqli_connect_errno()) {
 	echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -41,14 +45,18 @@ if ($distance == "100") {
 }
 
 if ($crowd == "1") {
-	$sql_crowd = " AND crowd = 1";
+	$sql_crowd = " AND crowd = 3";	// emptiest = 3, fullest = 1
 }
 
 if ($cleanliness == "1") {
-	$sql_cleanliness = " AND cleanliness = 3";
+	$sql_cleanliness = " AND cleanliness = 3";	//cleanest = 3, dirtiest = 1
 }
 
-$query = "SELECT * FROM toilets WHERE (gender = " . $sql_gender . ") AND distance < " . $sql_distance . $sql_cleanliness . $sql_crowd;
+//$query = "SELECT * FROM toilets WHERE (gender = " . $sql_gender . ") AND distance < " . $sql_distance . $sql_cleanliness . $sql_crowd;
+
+//sorted query ORDER BY distance ASC
+$query = "SELECT * FROM toilets WHERE (gender = " . $sql_gender . ") AND distance < " . $sql_distance . $sql_cleanliness . $sql_crowd . " ORDER BY distance ASC";
+
 $result = mysqli_query($con, $query);
 
 // Declare json array
@@ -66,6 +74,7 @@ while($row = mysqli_fetch_array($result)) {
 	$json[$i]['cleanliness'] = $row['cleanliness'];
 	$json[$i]['crowd'] = $row['crowd'];
 	$json[$i]['url'] = $row['url'];
+	$json[$i]['map'] = $row['map'];
 	$i++;
 }
 

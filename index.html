@@ -77,25 +77,47 @@
 			rel="apple-touch-startup-image">
 		
 		<!-- Kelvin: hacked and removed the rest of the startup images for prototype -->
+		
+		
+		
+		
+	    
 	</head>
 	
 	<body id="top">
 		<!-- Navbar -->
 		<nav class="navbar navbar-default navbar-fixed-top sb-slide" role="navigation">
 			<!-- Left Control -->
-			<div class="sb-toggle-left navbar-left">
-				<div class="navicon-line"></div>
-				<div class="navicon-line"></div>
-				<div class="navicon-line"></div>
-			</div><!-- /.sb-control-left -->
+			<div class="navbar-left">
+				<div id="icon">
+					<div class="sb-toggle-left">			
+							<div class="navicon-line"></div>
+							<div class="navicon-line"></div>
+							<div class="navicon-line"></div>
+					</div><!-- /.sb-control-left -->
+					
+					<a id="btn-back" href="#"><img src="images/back.png" width="20" height="20"></a>
+				</div>
+			</div>
 			
 			<div class="container">
-				<!-- Logo -->
-				<div id="logo" class="navbar-left">
-					<a id="btn-gohome" href="#"><img src="images/toilethero@2x.png" alt="ToiletHero" width="118" height="40"></a>
-				</div><!-- /#logo -->
+			
+						<!-- Logo -->
+						<div id="logo" class="navbar-left">
+							<a id="btn-gohome" href="#"><img src="images/toilethero@2x.png" alt="ToiletHero" width="118" height="40"></a>
+						</div><!-- /#logo -->
+					
+					
+					
+						<!-- GPS -->
+						<div id="gps" class="navbar-right">
+							<img src="images/gps.gif" alt="GPS:ON" width="90%" height="90%" >
+						</div><!-- /#GPS -->
+					
 				
 			</div>
+			
+			
 		</nav>
 		
 		<!-- Site -->
@@ -108,45 +130,47 @@
 
 	<div class="topstat col-xs-12">
 		<div class="level">
-		Level <span>4</span>
+		Level <span></span>
 		</div>
 
 		<div class="building">
-		Singapore Management University <span>School of Information Systems</span>
+		&nbsp <span></span>
 		</div>
 	</div>
+	
 	<br class="clearfix" />&nbsp;
-<!--  Carousel - consult the Twitter Bootstrap docs at 
-      http://twitter.github.com/bootstrap/javascript.html#carousel -->
-<div id="toiletCarousel" class="carousel slide"><!-- class of slide for animation -->
-  <div class="carousel-inner">
-  </div><!-- /.carousel-inner -->
-  <!--  Next and Previous controls below
-        href values must reference the id for this carousel -->
-    <a class="carousel-control left" href="#toiletCarousel" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#toiletCarousel" data-slide="next">&rsaquo;</a>
-</div><!-- /.carousel -->
+	<!--  Carousel - consult the Twitter Bootstrap docs at 
+	      http://twitter.github.com/bootstrap/javascript.html#carousel -->
+	<div id="toiletCarousel" class="carousel slide"><!-- class of slide for animation -->
+	  
+	  
+	  <div class="carousel-inner">
+	  </div><!-- /.carousel-inner -->
+	  
+	  
+	  <!--  Next and Previous controls below
+	        href values must reference the id for this carousel -->
+	    <a class="carousel-control left" href="#toiletCarousel" data-slide="prev"><p>&lsaquo;</p></a>
+	    <a class="carousel-control right" href="#toiletCarousel" data-slide="next"><p>&rsaquo;</p></a>
+	</div><!-- /.carousel -->
 
-	<!-- <div id="current" class="col-xs-12">
-		<div class="toiletpic">
-			<span>Outside Seminar Room 3-1</span>
-		</div>
-	</div> -->
+	
 	<div id="three" class="col-xs-12">
 		<div id="distance" class="statbox">
-		Distance
-		<span>87m</span>
-		</div>
+			Distance
+			<span></span>
+			</div>
 		<div id="cleanliness" class="statbox">
-		Cleanliness
-		<span><img src="images/cockroach-white.png" /><img src="images/cockroach-white.png" /></span>
-		</div>
+			Cleanliness
+			<span></span>
+			</div>
 		<div id="queue" class="statbox">
-		Crowd
-		<span><img src="images/man-white.png" /><img src="images/man-white.png" /><img src="images/man-grey.png" /></span>
+			Occupancy
+			<span></span>
 		</div>
 
 	</div>
+	
 	<div id="rating" class="col-xs-12">
 		<p>
 			<span id="miniicon"></span>
@@ -159,7 +183,8 @@
 			</button>
 		</p>
 	</div>
-</div>		
+	
+</div>	<!--startscreen-->	
 
 <div id="commentscreen">
 
@@ -169,7 +194,7 @@
 		</div>
 
 		<div class="building">
-		Singapore Management University <span>School of Information Systems</span>
+			&nbsp<span></span>
 		</div>
 	</div>
 	<br class="clearfix" />&nbsp;
@@ -261,20 +286,53 @@
 			</li>
 		</ul>
 	</div>
-</div>		
+</div>		<!--commentscreen-->
 
+
+	
 <div id="mapscreen">
+
+<!--upper-->
+	<div id="map"></div>
+	
+	<div class="level-toggle">
+		<a id="L1" href="#"><img src="images/map/toggle L1.png" /></a>
+		<a id="B1" href="#"><img src="images/map/toggle B1.png" /></a>
+	</div>
+	
+<!--
 	<span class="mapinfo">
 	Singapore Management University<br />
 School of Information Systems<br />
 Level 2 Female Toilet<br />
 (Next to the escalators)
 	</span>
-	<div id="viewdirections">
-		<button id="btn-viewdirections" type="button" class="btn btn-primary btn-lg btn-block">View Directions</button>
-	</div>
-</div>
+-->
 
+	<!--HALF DONE-->
+	<div id="viewdirections-bar">
+		<a href="#">
+			<p>View Directions</p>
+			<!--<button id="btn-viewdirections" type="button" class="btn btn-primary btn-lg btn-block">View Directions</button>-->
+			<img src="images/walk.png" />
+		</a>
+		
+		<!--lower-->
+	
+		<div id="directionlist">
+			<ul>
+				<li><img src=""></li>
+			</ul>
+		</div><!--directionlist-->
+		
+	</div> <!--viewdirections-bar -->
+
+</div>	<!--mapscreen-->
+
+
+
+
+<!--
 <div id="directionscreen">
 	<span class="mapinfo">
 	Singapore Management University<br />
@@ -291,7 +349,7 @@ Level 2 Female Toilet<br />
 	</ul>
 	<div id="viewindoor">
 		<button id="btn-viewindoor" type="button" class="btn btn-primary btn-lg btn-block">View Indoor Maps</button>
-	</div>
+	</div>	
 </div>
 
 					</div><!-- /#content-->
@@ -301,6 +359,8 @@ Level 2 Female Toilet<br />
 			
 			</div><!-- /.container -->
 		</div><!-- /#sb-site -->
+		
+		
 		
 		<!-- Slidebars -->
 <div class="sb-slidebar sb-left sb-width-custom" data-sb-width="220px">
@@ -349,6 +409,7 @@ Level 2 Female Toilet<br />
 		</ul>
 	</nav>
 </div><!-- /.sb-left -->
+
 <!-- Modal -->
 <div class="modal fade" id="rateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -458,189 +519,18 @@ Level 2 Female Toilet<br />
 		<!-- Form Validation -->
 		<script src="http://plugins.adchsm.me/slidebars/scripts/form-validation.js"></script>
 
-		<!-- Kelvin's random stuff -->
+		<!-- Kelvin's random stuff --> <!-- displaying statistics -->
 		<script>
 			(function($) {
 				$(document).ready(function() {
-
+					
 					// initial data loading
 					genUrl();
-					$("#sb-site").css( "min-height", "500px" );
-
-					function fillData() {
-						// use these as reference
-					  	$("#distance.statbox span").html($(".item.active").attr('data-distance') + "m");
-					  	$(".topstat .level span").html($(".item.active").attr('data-level'));
-					  	$(".topstat .building span").html($(".item.active").attr('data-building'));
-					  	//alert($(".item.active").attr('data-cleanliness'));
-
-					  	// mini icon
-					  	$("#miniicon img").remove();
-					  	if ($(".item.active").attr('data-gender') == "M") {
-					  		$("#miniicon").append("<img src=\"images/mini-male.png\" />");
-					  		$(".malecomment").show();
-					  		$(".femalecomment").hide();
-					  	} else if ($(".item.active").attr('data-gender') == "F") {
-					  		$("#miniicon").append("<img src=\"images/mini-female.png\" />");
-					  		$(".malecomment").hide();
-					  		$(".femalecomment").show();
-					  	} else {
-					  		$("#miniicon").append("<img src=\"images/mini-wc.png\" />");
-					  		$(".malecomment").show();
-					  		$(".femalecomment").hide();
-					  	}
-					  	// the rest of icons
-					  	$("#cleanliness span img").remove();
-					  	$("#queue span img").remove();
-					  	
-					  	if ($(".item.active").attr('data-cleanliness') == "3") {
-					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
-					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
-					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
-					  	} else if ($(".item.active").attr('data-cleanliness') == "2") {
-					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
-					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
-					  		$("#cleanliness span").append("<img src=\"images/butterfly-grey.png\" />");
-					  	} else {
-					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
-					  		$("#cleanliness span").append("<img src=\"images/butterfly-grey.png\" />");
-					  		$("#cleanliness span").append("<img src=\"images/butterfly-grey.png\" />");
-					  	}
-
-					  	if ($(".item.active").attr('data-crowd') == "3") {
-					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
-					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
-					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
-					  	} else if ($(".item.active").attr('data-crowd') == "2") {
-					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
-					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
-					  		$("#queue span").append("<img src=\"images/man-grey.png\" />");
-					  	} else {
-					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
-					  		$("#queue span").append("<img src=\"images/man-grey.png\" />");
-					  		$("#queue span").append("<img src=\"images/man-grey.png\" />");
-					  	}
-
-			  			var niceGender = "";
-						if ($(".item.active").attr('data-gender') == "M") {
-							niceGender = "Male";
-						} else if ($(".item.active").attr('data-gender') == "F") {
-							niceGender = "Female";
-						} else {
-							niceGender = "Disabled";
-						}
-
-						$(".mapinfo").html("Singapore Management University<br />"+ $(".item.active").attr('data-building') +"<br />Level " + $(".item.active").attr('data-level') + " " + niceGender + " Toilet<br />(" + $(".item.active").attr('data-landmark') + ")");
-					}
-
-					// event listener for carousel change
-					$('#toiletCarousel').on('slide.bs.carousel', function () {
-					  //alert($(".item.active").attr('data-distance'));
-					  	fillData();
-					})
-
-
-					// hide all by default except home
-					$("#commentscreen").hide();
-					$("#mapscreen").hide();
-					$("#directionscreen").hide();
-
-					$(".gotocomment").click(function(){
-						//alert("lol");
-						$("#rateModal2").modal('hide');
-						$("#startscreen").hide();
-						$("#commentscreen").show();
-						$("#mapscreen").hide();
-						$("#directionscreen").hide();
-						if ($("#tellus").val() != "") {
-							$(".replacetxt").html("<em>Current User</em>\"" + $("#tellus").val() + "\"<small>Just now</small>");
-								$(".replaceimg").attr("src", "images/userdef.jpg");
-
-						}
-						
-					});
-
-					$("#btn-viewindoor").click(function(){
-						//alert("lol");
-						$("#startscreen").hide();
-						$("#commentscreen").hide();
-						$("#mapscreen").show();
-						$("#directionscreen").hide();
-					});
-
-					$("#btn-viewdirections").click(function(){
-						//alert("lol");
-						$("#startscreen").hide();
-						$("#commentscreen").hide();
-						$("#mapscreen").hide();
-						$("#directionscreen").show();
-					});
 					
-					$(".toiletpic").click(function(){
-						//alert("lol");
-						$("#startscreen").hide();
-						$("#commentscreen").hide();
-						$("#mapscreen").show();
-						$("#directionscreen").hide();
-					});
+					$("#sb-site").css( "min-height", "500px" );
+					
 
-					$(".sb-menu img").click(function(){
-						$("#startscreen").show();
-						$("#commentscreen").hide();
-						$("#mapscreen").hide();
-						$("#directionscreen").hide();
-					});
-
-					$("#logo").click(function(){
-						$("#startscreen").show();
-						$("#commentscreen").hide();
-						$("#mapscreen").hide();
-						$("#directionscreen").hide();
-					});
-
-					$("#viewcomments").click(function(){
-						$("#startscreen").hide();
-						$("#commentscreen").show();
-						$("#mapscreen").hide();
-						$("#directionscreen").hide();
-					});
-
-
-					$(".carousel").carousel('pause');
-
-
-					// janitor alert
-					$("#janitoralert").hide();	// default
-
-					$("#rateModal2 .btn-success").click(function(){
-						$("#janitoralert").hide();
-					});
-					$("#rateModal2 .btn-warning").click(function(){
-						$("#janitoralert").hide();
-					});
-					$("#rateModal2 .btn-danger").click(function(){
-						$("#janitoralert").show();
-					});
-
-
-					// radio button change listener
-					$("ul.sb-menu input[type=checkbox]").change(function(){
-						//alert("checkbox changed");
-						genUrl();
-					});
-
-					// radius button listener
-					$("#radius button").click(function(){
-						//alert($(this).attr("id"));
-						$("#radius button").removeClass("active");
-						$(this).addClass("active");
-						genUrl();
-					});
-
-					function tapNav() {
-						alert("lol");
-					}
-
+					//FILTERS SELECTION: sent to test.php
 					function genUrl() {
 						// force back to default screen
 						$("#startscreen").show();
@@ -683,6 +573,7 @@ Level 2 Female Toilet<br />
 						
 						var url = "test.php?distance=" + url_distance + "&gender=" + url_gender + "&crowd=" + url_crowd + "&cleanliness=" + url_cleanliness;
 
+						//RETRIEVE RESULTS
 						$.getJSON( url, function( data ) {
 							// Populate carousel
 							$("div.carousel-inner div.item").remove();	// wipe em out yoz
@@ -694,32 +585,386 @@ Level 2 Female Toilet<br />
 									activeClass = " active";
 								}
 
-								var niceBuilding = "";
+								var niceBuilding = "Raffles City Shopping Centre";
 
-								if (data.building == "SIS") {
-									niceBuilding = "School of Information Systems";
-								} else if (data.building == "SOE") {
-									niceBuilding = "School of Economics & Social Sciences";
-								}
+								
+								/*
+									APPEND DATA TO CAROUSEL HTML USING EACH LOOP! [if index = 0, it is active (shown first)]
+									active must within the div id.
+									
+									e.g. <div id="item active">
+								 */
+								$(".carousel-inner").append("<div class=\"item" + activeClass + "\" data-gender=\"" + data.gender + "\" data-building=\"" + niceBuilding + "\" data-level=\"" + data.level + "\" data-distance=\"" + data.distance + "\" data-cleanliness=\"" + data.cleanliness + "\" data-crowd=\"" + data.crowd + "\" data-landmark=\"" + data.landmark +"\" data-map=\"" +data.map + "\"><img src=\"" + "images/toiletpics/"+ data.url + "\" alt=\"\" /><div class=\"carousel-caption\"><p>" + data.landmark + "</p><br /><button type=\"button\" class=\"tapnav btn btn-info\">Tap to navigate here</button></div></div>");
+								
+								
+								
+								
 
-								$(".carousel-inner").append("<div class=\"item" + activeClass + "\" data-gender=\"" + data.gender + "\" data-building=\"" + niceBuilding + "\" data-level=\"" + data.level + "\" data-distance=\"" + data.distance + "\" data-cleanliness=\"" + data.cleanliness + "\" data-crowd=\"" + data.crowd + "\" data-landmark=\"" + data.landmark + "\"><img src=\"" + "images/toiletpics/"+ data.url + "\" alt=\"\" /><div class=\"carousel-caption\"><p>" + data.landmark + "<br /><button type=\"button\" class=\"tapnav btn btn-info\">Tap to navigate here</button></p></div></div>");
+								 //HAVE TO BE INSIDE genURL??? BECAUSE the button .tapnav is generated within genURL...is it?
+								//EVENT THAT DISPLAYS MAP
+								$(".tapnav").click(function(){
+									currentPage = "#mapscreen";
+									
+									//alert("lol");
+									$("#startscreen").hide();
+									$("#commentscreen").hide();
+									$("#mapscreen").show();
+									$("#directionscreen").hide();
+									
+									placeCorrectIcon();
+									
+									//google.maps.event.trigger(map, 'resize');	//MUST RESIZE DUE TO JQuery CONFLICT
+								});
+								 
+								 
+							});	//END: EACH			
+							
+							//FILL DATA FOR INITIAL SLIDE
+							fillData();	// fill data for the VERY FIRST load
+												
+						});	//END getJSON INVOCATION
+					}	//END GET URL FUNCTION (apply filter)
+					
+					
+					
+					//FILL STAT DATA.... .carousel-inner is filled in separately. by genURL()
+					//THIS FILL DATA IS NOT EVEN WORKING.
+					function fillData() {
+						
+						$(".topstat .level span").remove();
+						$(".topstat .level").append("<span>" + $(".item.active").attr('data-level') + "</span>");			
+						
+						// fill the following html DOM objects with the data from the "active" item on the carousel
+					  	$("#distance.statbox span").html($(".item.active").attr('data-distance') + "m");
+					  	$(".topstat .building span").html($(".item.active").attr('data-building'));
 
-							});
+					  	// mini icon
+					  	$("#miniicon img").remove();
+					  	if ($(".item.active").attr('data-gender') == "M") {
+					  		$("#miniicon").append("<img src=\"images/mini-male.png\" />");
+					  		$(".malecomment").show();
+					  		$(".femalecomment").hide();
+					  	} else if ($(".item.active").attr('data-gender') == "F") {
+					  		$("#miniicon").append("<img src=\"images/mini-female.png\" />");
+					  		$(".malecomment").hide();
+					  		$(".femalecomment").show();
+					  	} else {
+					  		$("#miniicon").append("<img src=\"images/mini-wc.png\" />");
+					  		$(".malecomment").show();
+					  		$(".femalecomment").hide();
+					  	}
+					  	// the rest of icons
+					  	$("#cleanliness span img").remove();
+					  	$("#queue span img").remove();
+					  	
+					  	if ($(".item.active").attr('data-cleanliness') == "3") {
+					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
+					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
+					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
+					  	} else if ($(".item.active").attr('data-cleanliness') == "2") {
+					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
+					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
+					  		$("#cleanliness span").append("<img src=\"images/butterfly-grey.png\" />");
+					  	} else {
+					  		$("#cleanliness span").append("<img src=\"images/butterfly-white.png\" />");
+					  		$("#cleanliness span").append("<img src=\"images/butterfly-grey.png\" />");
+					  		$("#cleanliness span").append("<img src=\"images/butterfly-grey.png\" />");
+					  	}
 
-							$(".tapnav").click(function(){
-								//alert("lol");
-								$("#startscreen").hide();
-								$("#commentscreen").hide();
-								$("#mapscreen").show();
-								$("#directionscreen").hide();
-							});
+					  	if ($(".item.active").attr('data-crowd') == "3") {
+					  		/*
+					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
+					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
+					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
+					  		*/
+					  		$("#queue span").append("<img src=\"images/empty-green.png\" />");
+					  	} else if ($(".item.active").attr('data-crowd') == "2") {
+					  		/*
+					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
+					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
+					  		$("#queue span").append("<img src=\"images/man-grey.png\" />");
+					  		*/
+					  		$("#queue span").append("<img src=\"images/empty-yellow.png\" />");
+					  	} else {
+					  		/*
+					  		$("#queue span").append("<img src=\"images/man-white.png\" />");
+					  		$("#queue span").append("<img src=\"images/man-grey.png\" />");
+					  		$("#queue span").append("<img src=\"images/man-grey.png\" />");
+					  		*/
+					  		$("#queue span").append("<img src=\"images/empty-red.png\" />");
+					  	}
+					  	
 
-							fillData();	// fill data for current slide
-						});
+			  			var niceGender = "";
+						if ($(".item.active").attr('data-gender') == "M") {
+							niceGender = "Male";
+						} else if ($(".item.active").attr('data-gender') == "F") {
+							niceGender = "Female";
+						} else {
+							niceGender = "Disabled";
+						}
+
+						$(".mapinfo").html("Singapore Management University<br />"+ $(".item.active").attr('data-building') +"<br />Level " + $(".item.active").attr('data-level') + " " + niceGender + " Toilet<br />(" + $(".item.active").attr('data-landmark') + ")");
+						
+						/*
+							EDIT DATA IN MAPSCREEN HTML
+						 */
+						$("#mapscreen #map").html("<img src=\"images/map/" + $(".item.active").attr('data-map') +"\" />");
+						
+						
+						/*
+							DIRECTIONS LIST VALUES
+						 */
 					}
+					//END:FILL DATA
 
-				});
+					
+					/*
+						CAROUSEL CODES
+					*/
+					
+					// event listener for carousel change
+					//slid.bs.carousel INSTEAD of slide.bs.carousel
+					//call fillData() AFTER sliding has occurred INSTEAD of BEFORE. 
+					//calling it before, causes fillData() to retrieve the data from the previous "active" item,
+					//because the next item has not been considered "active" yet.
+					$('#toiletCarousel').on('slid.bs.carousel', function () {
+					  //alert($(".item.active").attr('data-distance'));
+					  	fillData();
+					});
+					
+					$(".carousel").carousel('pause');
+					
+					
+
+					/*
+						
+						SCREEN SWITCHING SCRIPTS
+						
+					*/
+					var currentPage ="#startscreen";
+					placeCorrectIcon();
+					
+					// hide all by default except home
+					$("#commentscreen").hide();
+					$("#mapscreen").hide();
+					$("#directionscreen").hide();
+					
+					
+					
+					//TEST currentPage for need to put back-button
+					function placeCorrectIcon() {
+						if(currentPage == "#startscreen") {
+							
+							$("#icon .sb-toggle-left").show();
+							$("#icon #btn-back").hide();
+							
+						} else {
+							
+							$("#icon .sb-toggle-left").hide();
+							$("#icon #btn-back").show();
+						}
+												
+					}
+					
+					$("#btn-back").click(function(){
+						if (currentPage != "#startscreen") {
+							currentPage = "#startscreen";
+							
+							$("#startscreen").show();
+							$("#commentscreen").hide();
+							$("#mapscreen").hide();
+							$("#directionscreen").hide();
+							
+							placeCorrectIcon();
+						}
+						
+							/*
+							$("#btn-back").click(function(){
+								if(currentPage=="toiletView"){
+									document.getElementById("redirectForm").submit();
+								}
+								else if(currentPage=="comments"){
+									currentPage ="toiletView";
+									$("#startscreen").show();
+									$("#commentscreen").hide();
+									$("#mapscreen").hide();
+									$("#directionscreen").hide();
+								}else if(currentPage=="map"){
+									currentPage ="toiletView";
+									$("#startscreen").show();
+									$("#commentscreen").hide();
+									$("#mapscreen").hide();
+									$("#directionscreen").hide();
+								}else if(currentPage=="direction"){
+									currentPage ="map";
+									$("#startscreen").hide();
+									$("#commentscreen").hide();
+									$("#mapscreen").show();
+									$("#directionscreen").hide();
+								}
+							});
+							*/
+					});
+
+					//THIS IS EXECUTED AFTER user has rated and commented
+					$(".gotocomment").click(function(){
+						//alert("lol");
+						currentPage = "#commentscreen";
+						
+						$("#rateModal2").modal('hide');
+						$("#startscreen").hide();
+						$("#commentscreen").show();
+						$("#mapscreen").hide();
+						$("#directionscreen").hide();
+						if ($("#tellus").val() != "") {
+							$(".replacetxt").html("<em>Current User</em>\"" + $("#tellus").val() + "\"<small>Just now</small>");
+								$(".replaceimg").attr("src", "images/userdef.jpg");
+
+						}
+						
+						placeCorrectIcon();
+					});
+
+					$("#btn-viewindoor").click(function(){
+						currentPage = "#mapscreen";
+						
+						//alert("lol");
+						$("#startscreen").hide();
+						$("#commentscreen").hide();
+						$("#mapscreen").show();
+						$("#directionscreen").hide();
+						
+						placeCorrectIcon();
+					});
+
+					$("#btn-viewdirections").click(function(){
+						currentPage = "#directionscreen";
+						
+						//alert("lol");
+						$("#startscreen").hide();
+						$("#commentscreen").hide();
+						$("#mapscreen").hide();
+						$("#directionscreen").show();
+						
+						placeCorrectIcon();
+					});
+					
+
+					$(".sb-menu img").click(function(){
+						currentPage = "#startscreen";
+					
+						$("#startscreen").show();
+						$("#commentscreen").hide();
+						$("#mapscreen").hide();
+						$("#directionscreen").hide();
+					});
+
+					$("#logo").click(function(){
+						currentPage = "#startscreen";
+						
+						$("#startscreen").show();
+						$("#commentscreen").hide();
+						$("#mapscreen").hide();
+						$("#directionscreen").hide();
+						
+						placeCorrectIcon();
+					});
+
+					$("#viewcomments").click(function(){
+						currentPage="#commentscreen";
+					
+						$("#startscreen").hide();
+						$("#commentscreen").show();
+						$("#mapscreen").hide();
+						$("#directionscreen").hide();
+						
+						placeCorrectIcon();
+					});
+					
+
+
+					// janitor alert
+					$("#janitoralert").hide();	// default
+
+					$("#rateModal2 .btn-success").click(function(){
+						$("#janitoralert").hide();
+					});
+					$("#rateModal2 .btn-warning").click(function(){
+						$("#janitoralert").hide();
+					});
+					$("#rateModal2 .btn-danger").click(function(){
+						$("#janitoralert").show();
+					});
+
+
+					// radio button change listener
+					$("ul.sb-menu input[type=checkbox]").change(function(){
+						//alert("checkbox changed");
+						genUrl();
+					});
+
+					// radius button listener
+					$("#radius button").click(function(){
+						//alert($(this).attr("id"));
+						$("#radius button").removeClass("active");
+						$(this).addClass("active");
+						genUrl();
+					});
+					
+					
+					/*
+						MAP TOGGLING
+					 */
+					
+					//defaults
+					$("#L1").show();
+					$("#B1").hide();
+					
+					$("#L1").click(function() {
+						$("#L1").hide();
+						$("#B1").show();
+						
+						var map_addr = $(".item.active").attr('data-map');	//SB%20to%20L1%20Aldo%20Toilet%20(L1).png
+						map_addr = map_addr.substring(0,map_addr.length - 8) + "(B1).png";	//substring and concat new value
+						
+						//replace map with B1 map
+						$("#mapscreen #map").html("<img src=\"images/map/" + map_addr +"\" />");
+					});
+					
+					$("#B1").click(function() {
+						$("#L1").show();
+						$("#B1").hide();
+						
+						var map_addr = $(".item.active").attr('data-map');	//SB%20to%20L1%20Aldo%20Toilet%20(L1).png
+						map_addr = map_addr.substring(0,map_addr.length - 8) + "(L1).png";	//substring and concat new value
+						
+						//replace map with B1 map
+						$("#mapscreen #map").html("<img src=\"images/map/" + map_addr +"\" />");
+					});
+					
+					/*
+						Directions list toggle HALF DONE
+					 */
+					 $("#viewdirections-bar a").click(function() {
+						 $("#directionlist").slideToggle({direction: "up"});
+						 
+						 $(this).toggleClass('barClose');
+					 });
+					
+					
+					/*
+						directionlist scripts HALF DONE
+					*/ 
+					 $("#directionlist ul li").click(function(){
+						$(this).remove(); 
+					 });
+					
+					
+				});	//END DOCUMENT READY
+				
 			}) (jQuery);
 		</script>
+		
 	</body>
 </html>

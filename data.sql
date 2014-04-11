@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 19, 2014 at 08:09 PM
+-- Generation Time: Apr 08, 2014 at 08:37 AM
 -- Server version: 5.5.29
 -- PHP Version: 5.4.10
 
@@ -30,14 +30,53 @@ CREATE TABLE `toilets` (
   `cleanliness` int(11) NOT NULL,
   `crowd` int(11) NOT NULL,
   `url` varchar(255) NOT NULL,
+  `map` varchar(255) NOT NULL,
+  `numdirection` varchar(5) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `toilets`
 --
 
-INSERT INTO `toilets` (`id`, `gender`, `building`, `level`, `landmark`, `distance`, `cleanliness`, `crowd`, `url`) VALUES
+INSERT INTO `toilets` (`id`, `gender`, `building`, `level`, `landmark`, `distance`, `cleanliness`, `crowd`, `url`, `map`, `numdirection`) VALUES
+(1, 'M', 'Raffles City', '1', 'Beside Kate Spade, Aldo & Swarovski', 86, 3, 2, 'Aldo_L1.jpg', 'SB to L1 Aldo Toilet (L1).png', '4'),
+(2, 'F', 'Raffles City', '1', 'Beside Kate Spade, Aldo & Swarovski', 87, 2, 3, 'Aldo_L1.jpg', 'SB to L1 Aldo Toilet (L1).png', '4'),
+(3, 'Disabled', 'Raffles City', '1', 'Beside Kate Spade, Aldo & Swarovski', 88, 2, 3, 'Aldo_L1.jpg', 'SB to L1 Aldo Toilet (L1).png', '4'),
+(4, 'M', 'Raffles City', 'B1', 'Beside Crumpler, Yoguru & Monoyono', 110, 3, 1, 'Crumpler_B1.jpg', 'SB to B1 Gongcha Toilet (L1).png', '6'),
+(5, 'F', 'Raffles City', 'B1', 'Beside Crumpler, Yoguru & Monoyono', 111, 1, 3, 'Crumpler_B1.jpg', 'SB to B1 Gongcha Toilet (L1).png', '6'),
+(6, 'Disabled', 'Raffles City', 'B1', 'Beside Crumpler, Yoguru & Monoyono', 112, 3, 1, 'Crumpler_B1.jpg', 'SB to B1 Gongcha Toilet (L1).png', '6'),
+(7, 'M', 'Raffles City', 'B1', 'Beside Mos Burger, The Face Shop', 60, 1, 1, 'Mos_B1.jpg', 'SB to B1 MOS Toilet (L1).png', '6'),
+(8, 'F', 'Raffles City', 'B1', 'Beside Mos Burger, The Face Shop', 61, 3, 3, 'Mos_B1.jpg', 'SB to B1 MOS Toilet (L1).png', '6'),
+(9, 'Disabled', 'Raffles City', 'B1', 'Beside Mos Burger, The Face Shop', 62, 1, 1, 'Mos_B1.jpg', 'SB to B1 MOS Toilet (L1).png', '6'),
+(10, 'M', 'Raffles City', 'B1', 'Beside Bangkok Jam, Buffet Town', 140, 3, 3, 'BangkokJam_B1.jpg', 'SB to B1 Bangkok Jam Toilet (L1).png', '7'),
+(11, 'F', 'Raffles City', 'B1', 'Beside Bangkok Jam, Buffet Town', 141, 1, 1, 'BangkokJam_B1.jpg', 'SB to B1 Bangkok Jam Toilet (L1).png', '7'),
+(12, 'Disabled', 'Raffles City', 'B1', 'Beside Bangkok Jam, Buffet Town', 142, 1, 3, 'BangkokJam_B1.jpg', 'SB to B1 Bangkok Jam Toilet (L1).png', '7');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `toilets_old`
+--
+
+CREATE TABLE `toilets_old` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `gender` varchar(255) NOT NULL,
+  `building` varchar(255) NOT NULL,
+  `level` varchar(255) NOT NULL,
+  `landmark` varchar(255) NOT NULL,
+  `distance` int(11) NOT NULL,
+  `cleanliness` int(11) NOT NULL,
+  `crowd` int(11) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+
+--
+-- Dumping data for table `toilets_old`
+--
+
+INSERT INTO `toilets_old` (`id`, `gender`, `building`, `level`, `landmark`, `distance`, `cleanliness`, `crowd`, `url`) VALUES
 (1, 'F', 'SIS', '2', 'Near the Escalators', 100, 2, 1, 'Female_SIS_L2.jpg'),
 (2, 'Disabled', 'SIS', '2', 'Near the Escalators', 93, 3, 1, 'MaleDisabled_SIS_L2.jpg'),
 (3, 'Disabled', 'SOE', '2', 'Near the Escalators', 246, 3, 1, 'MaleDisabled_SOE_L2.jpg'),
